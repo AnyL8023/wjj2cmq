@@ -94,6 +94,12 @@ function startHeartAnimation() {
 
 function timeElapse(date){
 	var current = Date();
+var current = new Date();
+current.setFullYear(2020, 0, 14);
+current.setHours(4);
+current.setMinutes(20);
+current.setSeconds(13);
+current.setMilliseconds(14);
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
 	var days = Math.floor(seconds / (3600 * 24));
 	seconds = seconds % (3600 * 24);
